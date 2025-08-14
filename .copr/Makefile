@@ -15,5 +15,9 @@ srpm:
 	# Build SRPM
 	rpmbuild --define "_topdir $(PWD)/rpmbuild" -bs rpmbuild/SPECS/vllm.spec
 	
-	# Copy SRPM to expected location
-	cp rpmbuild/SRPMS/*.src.rpm ./
+	# Copy SRPM to the output directory that Copr expects
+	if [ -n "$(outdir)" ]; then \
+		cp rpmbuild/SRPMS/*.src.rpm "$(outdir)/"; \
+	else \
+		cp rpmbuild/SRPMS/*.src.rpm ./; \
+	fi
