@@ -11,10 +11,10 @@ URL:            https://github.com/vllm-project/vllm
 Source0:        https://github.com/vllm-project/vllm/archive/v%{version}.tar.gz#/%{srcname}-%{version}.tar.gz
 
 BuildRequires:  python3-devel
-BuildRequires:  python3-setuptools >= 77.0.3
-BuildRequires:  python3-setuptools-scm >= 8.0
+BuildRequires:  python3-setuptools
+BuildRequires:  python3-setuptools-scm
 BuildRequires:  python3-wheel
-BuildRequires:  cmake >= 3.26.1
+BuildRequires:  cmake
 BuildRequires:  ninja-build
 BuildRequires:  gcc-c++
 BuildRequires:  python3-torch
