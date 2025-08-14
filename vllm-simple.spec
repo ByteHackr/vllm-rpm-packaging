@@ -12,7 +12,7 @@ Source0:        https://github.com/vllm-project/vllm/archive/v%{version}.tar.gz#
 
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
-BuildRequires:  python3-setuptools-scm
+# BuildRequires:  python3-setuptools-scm  # Not available in Fedora 43
 BuildRequires:  python3-wheel
 BuildRequires:  cmake
 BuildRequires:  ninja-build
