@@ -27,7 +27,7 @@ BuildRequires:  python3-numpy
 # BuildRequires:  python3-packaging    # May not be available
 
 # Commented out all other dependencies for initial build
-# BuildRequires:  python3-torch        # Not available in Fedora 42/43
+BuildRequires:  python3-torch      # Required by setup.py
 # BuildRequires:  python3-transformers # Not available
 # BuildRequires:  python3-regex        # May not be available
 # BuildRequires:  python3-tqdm         # May not be available
